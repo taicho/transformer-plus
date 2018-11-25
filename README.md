@@ -14,18 +14,22 @@ All commands support the following:
 
 ### Selections From Regex
 Creates selections from regex.
+
 ![Selections From Regex](images/selectionsFromRegex.gif)
 
 ### Transform
 Transforms text.
+
 ![Transform](images/transformCommand.gif)
 
 ### Selections
 Creates selections from start-end chracter index array(s) (per-line).
+
 ![Selections](images/selectionsCommand.gif)
 
 ### Generator
 Generates text based on expression.
+
 ![Generator](images/generatorCommand.gif)
 
 ## Requirements
