@@ -19,7 +19,7 @@
     "icon": "images/icon.png",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/taicho/transformer-plus.git"
     },
     "main": "./out/extension",
     "galleryBanner": {
