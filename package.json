@@ -17,6 +17,10 @@
         "onCommand:extension.generatorCommand"
     ],
     "icon": "images/icon.png",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
     "main": "./out/extension",
     "galleryBanner": {
         "color":"#1E1E1E",
