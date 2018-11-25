@@ -1,0 +1,64 @@
+{
+    "name": "transformer-plus",
+    "displayName": "Transformer Plus",
+    "description": "Text transformations and selections using expressions.",
+    "version": "1.0.0",
+    "publisher": "azad-ratzki",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.transform",
+        "onCommand:extension.createSelections",
+        "onCommand:extension.createSelectionsFromRegex",
+        "onCommand:extension.generatorCommand"
+    ],
+    "icon": "images/icon.png",
+    "main": "./out/extension",
+    "galleryBanner": {
+        "color":"#1E1E1E",
+        "theme": "dark"
+    },
+    
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.transform",
+                "title": "Transform",
+                "category": "Transformer Plus"
+            },
+            {
+                "command": "extension.createSelections",
+                "title": "Create Selections",
+                "category": "Transformer Plus"
+            },
+            {
+                "command": "extension.createSelectionsFromRegex",
+                "title": "Create Selections From Regex",
+                "category": "Transformer Plus"
+            },
+            {
+                "command": "extension.generatorCommand",
+                "title": "Generate text dynamically",
+                "category": "Transformer Plus"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
